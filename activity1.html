@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Chemical AI Lab</title>
+  <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="chemical" style="border:1px solid;">
+        <div class="menubar">
+          <div class="container flex">
+            <h1 class="logo">
+              <a href="index.html">Chemical AI Lab</a>
+            </h1>
+          </div>
+        </div>
+
+        <div class="trainingContainer">
+          <div class="trContainer flex">
+                <h2>Choose items that you can take into chemical lab </h2>
+                <div class="list">
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Fireworks" id="Fireworks">
+                    <label for="Fireworks">
+                      <div class="icon">
+                        <i class="temp-Fireworks"></i>
+                      </div>
+                      <div class="title">
+                        Fireworks
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Perfume" id="Perfume">
+                    <label for="Perfume">
+                      <div class="icon">
+                        <i class="temp-Perfume"></i>
+                      </div>
+                      <div class="Perfume">
+                        Perfume
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Soda" id="Soda">
+                    <label for="Soda">
+                      <div class="icon">
+                        <i class="temp-Soda"></i>
+                      </div>
+                      <div class="title">
+                        Soda
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Safety-goggles" id="Safety-goggles">
+                    <label for="Safety-goggles">
+                      <div class="icon">
+                        <i class="temp-Safety-goggles"></i>
+                      </div>
+                      <div class="title">
+                        Safety Goggles
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Laptop" id="Laptop">
+                    <label for="Laptop">
+                      <div class="icon">
+                        <i class="temp-Laptop"></i>
+                      </div>
+                      <div class="title">
+                        Laptop
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Gloves" id="Gloves">
+                    <label for="Gloves">
+                      <div class="icon">
+                        <i class="temp-Gloves"></i>
+                      </div>
+                      <div class="title">
+                        Gloves
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Lab-Coat" id="Lab-Coat">
+                    <label for="Lab-Coat">
+                      <div class="icon">
+                        <i class="temp-Lab-Coat"></i>
+                      </div>
+                      <div class="title">
+                        Lab Coat
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Earpods" id="Earpods">
+                    <label for="Earpods">
+                      <div class="icon">
+                        <i class="temp-Earpods"></i>
+                      </div>
+                      <div class="title">
+                        Earpods
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Notebook" id="Notebook">
+                    <label for="Notebook">
+                      <div class="icon">
+                        <i class="temp-Notebook"></i>
+                      </div>
+                      <div class="title">
+                        Notebook
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Lighter" id="Lighter">
+                    <label for="Lighter">
+                      <div class="icon">
+                        <i class="temp-Lighter"></i>
+                      </div>
+                      <div class="title">
+                        Lighter
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Sunglasses" id="Sunglasses">
+                    <label for="Sunglasses">
+                      <div class="icon">
+                        <i class="temp-Sunglasses"></i>
+                      </div>
+                      <div class="title">
+                        Sunglasses
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Aerosol-Spray" id="Aerosol-Spray">
+                    <label for="Aerosol-Spray">
+                      <div class="icon">
+                        <i class="temp-Aerosol-Spray"></i>
+                      </div>
+                      <div class="title">
+                        Aerosol Spray
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Sanitizer" id="Sanitizer">
+                    <label for="Sanitizer">
+                      <div class="icon">
+                        <i class="temp-Sanitizer"></i>
+                      </div>
+                      <div class="title">
+                        Sanitizer
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Face-Shield" id="Face-Shield">
+                    <label for="Face-Shield">
+                      <div class="icon">
+                        <i class="Face-Shield"></i>
+                      </div>
+                      <div class="title">
+                        Face-Shield
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" name="equipments" value="Lab-manual" id="Lab-manual">
+                    <label for="Lab-manual">
+                      <div class="icon">
+                        <i class="temp-Lab-manual"></i>
+                      </div>
+                      <div class="title">
+                        Lab Manual
+                      </div>
+                    </label>
+                  </div>
+                </div>
+        </div>
+        </div>
+      
+
+</body>
+
+</html>

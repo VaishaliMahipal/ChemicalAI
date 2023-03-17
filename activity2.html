@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Chemical AI Lab</title>
+  <script src='main.js'></script>
+</head>
+
+<body>
+    <div id="chemical" style="border:1px solid;">
+        <div class="menubar">
+          <div class="container flex">
+            <h1 class="logo">
+              <a href="index.html">Chemical AI Lab</a>
+            </h1>
+          </div>
+        </div>
+
+        <div class="databaseContainer">
+            <div class="dbContainer flex">
+             <!--   <h2>Database</h2>-->
+                <table id="sampleDatabase">
+                    <tr>
+                      <th>Reactant 1</th>
+                      <th>Reactant 2</th>
+                      <th>Product</th>
+                      <th>Gas Released</th>
+                      <th>Temperature Change</th>
+                      <th>Change in Apperance</th>
+                      <th>Reaction/No Reaction</th>
+                    </tr>
+                    <tr>
+                      <td>Sulfuric acid</td>
+                      <td>Sodium hydroxide</td>
+                      <td>Sodium sulfate (Na2SO4) + Water (H2O)</td>
+                      <td>No</td>
+                      <td>Yes</td>
+                      <td>Generation of Heat</td>
+                      <td>Reaction</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium carbonate</td>
+                        <td>Sulfuric acid</td>
+                        <td>Sodium sulfate (Na2SO4) + Water (H2O) + Carbon dioxide (CO2)</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Bubbling or fizzing (release of CO2 gas)</td>
+                        <td>Reaction</td>
+                    </tr>
+                    <tr>
+                        <td>Ethanol</td>
+                        <td>Carbon dioxide</td>
+                        <td>Water (H2O) + Ethanoic acid (CH3COOH)</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Slight cloudiness or milky appearance</td>
+                        <td>Reaction</td>
+                    </tr>
+                   <!-- <tr>
+                        <td>Hydrochloric acid</td>
+                        <td>Sodium bicarbonate</td>
+                        <td>Sodium chloride (NaCl) + Water (H2O) + Carbon dioxide (CO2)</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Bubbling or fizzing (release of CO2 gas)</td>
+                        <td>Reaction</td>
+                    </tr>
+                    <tr>
+                        <td>Calcium chloride</td>
+                        <td>Sodium carbonate</td>
+                        <td>Calcium carbonate (CaCO3) + Sodium chloride (NaCl) + Water (H2O)</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Formation of a white precipitate</td>
+                        <td>Reaction</td>
+                    </tr>-->
+                    <tr>
+                        <td>Iron</td>
+                        <td>Hydrochloric acid</td>
+                        <td>Iron chloride (FeCl2) + Hydrogen gas (H2)</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Bubbling or fizzing (release of H2 gas)</td>
+                        <td>Reaction</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium chloride</td>
+                        <td>Potassium hydroxide</td>
+                        <td>No reaction</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No observable physical changes</td>
+                        <td>No reaction</td>
+                    </tr>
+                    <tr>
+                        <td>Hydrochloric acid</td>
+                        <td>Nitric acid</td>
+                        <td>No reaction</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No observable physical changes</td>
+                        <td>No reaction</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium chloride</td>
+                        <td>Sodium hydroxide</td>
+                        <td>Sodium chloride (NaCl) + Water (H2O)</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No observable physical changes</td>
+                        <td>Reaction</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="propertyContainer">
+          <div class="ppContainer flex">
+            <form action="/action_page.php">
+              <input type="checkbox" id="property1" name="property1" value="Bike">
+              <label for="property1">Gas Released</label><br>
+              <input type="checkbox" id="property2" name="property2" value="Car">
+              <label for="property2">Temperature Changed</label><br>
+              <input type="checkbox" id="property3" name="property3" value="Boat">
+              <label for="property3">Change in Appearance</label>
+              <select class="select2 narrow wrap" id="select2">
+                <option value="prompt 1">Choose reactants to see if reaction occurs</option>
+                <option value="prompt 2">1. TestData1</option>
+                <option value="prompt 3">2. TestData2</option>
+                <option value="prompt 4">3. TestData3</option>
+                <option value="prompt 5">4. TestData4</option>
+                <option value="prompt 6">5. TestData5</option>
+              </select>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      
+    </div>
+
+</body>
+
+</html>
