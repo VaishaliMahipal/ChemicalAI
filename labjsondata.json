@@ -1,0 +1,902 @@
+[
+ {
+  "Id": 1,
+  "Object": "Firecracker",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 2,
+  "Object": "Perfume",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 3,
+  "Object": "Candle",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 4,
+  "Object": "Lighter",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 5,
+  "Object": "Aerosol Spray",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 6,
+  "Object": "Nail Polish Remover",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 7,
+  "Object": "Nail Polish",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 8,
+  "Object": "Hair Spray",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 9,
+  "Object": "Gasoline",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 10,
+  "Object": "Rubbing Alcohol",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 11,
+  "Object": "Matches",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 12,
+  "Object": "Spray Paint",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 13,
+  "Object": "Disinfectant Spray",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 14,
+  "Object": "Deodorant",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 15,
+  "Object": "Glue",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 16,
+  "Object": "Cleaning Supplies",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 17,
+  "Object": "Air Freshener",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 18,
+  "Object": "Sunscreen",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 19,
+  "Object": "Hair Wax",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 20,
+  "Object": "Makeup Remover",
+  "Flammable": 1,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 21,
+  "Object": "Sandwich",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 22,
+  "Object": "Burger",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 23,
+  "Object": "Peanut Butter",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 24,
+  "Object": "Apple",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 25,
+  "Object": "Juice Box",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 26,
+  "Object": "Gum",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 27,
+  "Object": "Milk",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 28,
+  "Object": "Soda",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 29,
+  "Object": "Coke",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 30,
+  "Object": "Banana",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 31,
+  "Object": "Grapes",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 32,
+  "Object": "Cheetos",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 33,
+  "Object": "Chips",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 34,
+  "Object": "Takis",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 35,
+  "Object": "Oreos",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 36,
+  "Object": "Cookies",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 37,
+  "Object": "Oranges",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 38,
+  "Object": "Pizza",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 39,
+  "Object": "Ketchup",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 40,
+  "Object": "French Fries",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 1,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 41,
+  "Object": "Lab Coat",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 42,
+  "Object": "Gloves",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 43,
+  "Object": "Chemical Splash Goggles",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 44,
+  "Object": "KN-95 face mask",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 45,
+  "Object": "Face Shield",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 46,
+  "Object": "Surgical Mask",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 47,
+  "Object": "Safety Glasses",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 48,
+  "Object": "Sneakers",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 49,
+  "Object": "Lab Apron",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 50,
+  "Object": "Hair Cap",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 51,
+  "Object": "Full Body Suit",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 52,
+  "Object": "Coveralls",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 53,
+  "Object": "Ear Plugs",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 54,
+  "Object": "Respirator",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 55,
+  "Object": "Shoe Cover",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 56,
+  "Object": "Surgical Hoods",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 57,
+  "Object": "Heat Resistant Gloves",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 58,
+  "Object": "Chemical-resistant Sleeves",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 59,
+  "Object": "Hair Net",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 60,
+  "Object": "Chemical-resistant Boots",
+  "Flammable": 0,
+  "Personal_protective_equipment": 1,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 61,
+  "Object": "Lab Manual",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 62,
+  "Object": "Notebook",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 63,
+  "Object": "Pencil",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 64,
+  "Object": "Pen",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 65,
+  "Object": "Calculator",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 66,
+  "Object": "Laptop",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 67,
+  "Object": "Text Book",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 68,
+  "Object": "Ruler",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 69,
+  "Object": "Stopwatch",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 70,
+  "Object": "Tablets",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 71,
+  "Object": "Sticky Notes",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 72,
+  "Object": "Checklists",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 73,
+  "Object": "Paper clips",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 74,
+  "Object": "Correction Tape",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 75,
+  "Object": "Eraser",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 76,
+  "Object": "Sharpener",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 77,
+  "Object": "Highlighter",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 78,
+  "Object": "Graph Paper",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 79,
+  "Object": "File Folder",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 80,
+  "Object": "Data Log Book",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 1,
+  "Unsafe_Wearable_Things": 0
+ },
+ {
+  "Id": 81,
+  "Object": "Loose Clothes",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 82,
+  "Object": "Open-Toes Shoes",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 83,
+  "Object": "High heels",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 84,
+  "Object": "Airpods",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 85,
+  "Object": "Headphones",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 86,
+  "Object": "Sandals",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 87,
+  "Object": "Necklaces",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 88,
+  "Object": "Shorts",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 89,
+  "Object": "Bracelets",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 90,
+  "Object": "Loose-Fitting Pants",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 91,
+  "Object": "Dangling Earrings",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 92,
+  "Object": "Scarf",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 93,
+  "Object": "Flip Flop",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 94,
+  "Object": "Ring",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 95,
+  "Object": "Loose Hoodie",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 96,
+  "Object": "Loose Long Hairs",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 97,
+  "Object": "Contact Lenses",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 98,
+  "Object": "Sunglasses",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 99,
+  "Object": "Loose Watch",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ },
+ {
+  "Id": 100,
+  "Object": "Loose belts",
+  "Flammable": 0,
+  "Personal_protective_equipment": 0,
+  "Food": 0,
+  "Research_Instruments": 0,
+  "Unsafe_Wearable_Things": 1
+ }
+]

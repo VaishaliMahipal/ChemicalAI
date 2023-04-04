@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Decision Tree Classifier</title>
+    <script src="https://cdn.jsdelivr.net/npm/scikit-learn@1.0.1/dist/scikit-learn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-ml@0.6.0/dist/js-ml.js"></script>
+
+    <script src="https://unpkg.com/js-ml"></script>
+
+  </head>
+  <body>
+    <div id="result"></div>
+    <script>
+      // Load your data from an array
+const data = [
+  [1, 3, 1],
+  [2, 4, 1],
+  [3, 1, 0],
+  [4, 2, 0],
+  [5, 3, 1],
+  [6, 1, 0],
+  [7, 2, 0],
+  [8, 4, 1],
+  [9, 2, 0],
+  [10, 3, 1],
+];
+
+// Preprocess your data
+const X = data.map(row => [row[0], row[1]]);
+const y = data.map(row => row[2]);
+
+// Train a decision tree classifier
+const clf = new ml.DecisionTreeClassifier({
+  criterion: "entropy"
+});
+clf.train(X, y).then(() => {
+  setTimeout(() => {
+    console.log("Training complete.");
+  }, 0);
+});
+
+// Make a prediction
+const prediction = clf.predict([[2, 4]]);
+console.log(prediction);
+    </script>
+  </body>
+</html>

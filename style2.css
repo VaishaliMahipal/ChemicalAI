@@ -1,0 +1,32 @@
+.image-container {
+  display: flex;
+}
+
+.acceptable, .non-acceptable {
+  flex: 1;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid black;
+}
+button {
+  display: inline-block;
+  background-color:#4B0082;
+  color: #fff;
+  padding: 15px 32px;
+  cursor:pointer;
+  border: none;
+  border: radius 5px;
+  max-width: 38%;
+  max-height: 60%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 4px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

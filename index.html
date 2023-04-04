@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Chemical AI Lab</title>
-  <script src='main.js'></script>
+  <script type="module" src='./index.js'></script>
+  
 </head>
 
 <body>
@@ -25,27 +29,17 @@
           </div>
         </div>
 
-        <div class="experimentseContainer">
-          <div class="expContainer flex">
-          <div class="column-4 Activity-1">
-            <h2 class="Activity-text">
-              <a href="activity1.html">Activity 1</a>
-            </h2>
-          </div>
-          
-          <div class="column-4 Activity-2">
-            <h2 class="Activity-text">
-              <a href="activity2.html">Activity 2</a>
-            </h2>
-          </div>
-          
-          <div class="column-4 Activity-3">
-            <h2 class="Activity-text">
-              <a href="activity3.html">Activity 3</a>
-            </h2>
+        <div class="trainingContainer">
+          <div class="trContainer flex">
+                <h2>Choose items that you can take into chemical lab </h2>
+                <div class="list" id = "divCheckboxs">
+                </div>
+               
+                <button id="next" onclick="import('./index.js').then(module => module.checkCheckbox())">Next</button>
+               
           </div>
         </div>
-        </div>
+    </div>
       
 
 </body>
