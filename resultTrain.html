@@ -12,21 +12,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
   <title>Chemical AI Lab</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style2.css">
   <script type="module" src='resultTrain.js'></script>
 </head>
 <body>
-  <div class="image-container">
-    <div class="acceptable" id="acceptable">
-      <h2>Acceptable Objects</h2>
-      <!--<img src="ImageIcon/Takis.jpg" class="image"> -->
+    <div id="chemical" style="border:1px solid;">
+      <div class="menubar">
+        <div class="container flex">
+          <h1 class="logo">
+            <a href="index.html">Chemical AI Lab</a>
+          </h1>
+        </div>
+      </div>
+
+      <div class="testingContainer">
+        <div class="testContainer flex">
+          <label for="choiceQ"  class="choiceQ">These are the results based on your training. Do you think the AI got it right based on your training?</label>
+          <label>
+            <input type="radio" value="Yes" name="choice-radio" onclick="import('./resultTrain.js').then(module => module.saveResponse())">
+            Yes
+          </label>
+          <label>
+            <input type="radio" value="No" name="choice-radio" onclick="import('./resultTrain.js').then(module => module.saveResponse())">
+            No
+          </label>
+
+              <div class="image-container">
+                <h2>SAFE OBJECTS</h2>
+                  <div class="acceptable" id="acceptable">
+                    
+                  </div>
+                  <h2>UNSAFE OBJECTS</h2>
+                  <div class="non-acceptable" id="non-acceptable">
+                  
+                  </div>
+              </div>
+              <a href="index.html">
+                <button id="Back" >Start Over</button>
+              </a>  
+            </div>          
+      </div>
     </div>
-    <div class="non-acceptable" id="non-acceptable">
-      <h2>Non-Acceptable Objects</h2>
-    </div>
-  </div>
-  <a href="index.html">
-  <button id="Back" >Back</button>
-  </a>
 </body>
 </html>

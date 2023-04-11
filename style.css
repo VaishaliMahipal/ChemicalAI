@@ -19,31 +19,16 @@ body
   line-height: 1.6;
 }
 */
-ul{
-    list-style-type: none;
-}
 
-a{
-    text-decoration: none;
-    color: #333;
-}
-
-h1,
-h2{
-    font-weight: bold;
-    line-height: 1.2;
-    margin: 5px 0;
-}
-
-p{
-    margin: 10px 0;
-    font-weight: bold;    
+h1{
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .menubar{
     background-color: #4B0082;
     color: #fff;
-    height: 70px;
+    height: 45px;
 }
 
 .menubar ul{
@@ -65,81 +50,7 @@ p{
     align-items: center;
 }
 
-#sampleDatabase {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    height:50%;
-  }
-  
-  #sampleDatabase td, #sampleDatabase th {
-    border: 1px solid #ddd;
-    padding: 5px;
-  }
-  
-  #sampleDatabase tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #sampleDatabase tr:hover {background-color: #ddd;}
-  
-  #sampleDatabase th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-  }
 
-  .select2.narrow {
-    background:  #04AA6D;
-    color: #fff;
-    font-weight: bold;
-}
-
-
-
-
-.column-4 {
-  float: left;
-  width: 21%;
-  padding: 10px;
-  margin:20px;
-  height: 250px;
-}
-
-.test-1 {
-  background: url('.jpeg');
-  background-size: cover;
-}
-
-.Activity-1 {
-  background-color:	#7FFFD4;
-}
-
-.Activity-2 {
-  background-color:#209BFF;
-}
-
-.Activity-3 {
-  background-color:#FFB6C1;
-}
-
-.Activity-text {
-  text-align:center;
-  font-size:50px;
-}
-
-
-.Activity-1:hover {
-   background-color: #FEDE00;
-}
-
-.Activity-2:hover {
-   background-color: #FEDE00;
-}
-
-.Activity-3:hover {
-   background-color: #FEDE00;
-}
 
 /*.trainingContainer {
   position:absolute;
@@ -148,12 +59,14 @@ p{
   transform:translate(-50%,-50%);
 }*/
   .trainingContainer h2 {
-    font-size:25px;
+    font-size:15px;
     color:#888;
     text-align:center;
+    font-weight: bold;
+    gap:20px;
   }
   .trainingContainer .list {
-    margin-top:40px;
+    margin-top:25px;
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
@@ -162,8 +75,8 @@ p{
   }
   .form-element {
     position:relative;
-    width:140px;
-    height:140px;
+    width:110px;
+    height:110px;
   }
   .form-element input {
     display:none;
@@ -186,9 +99,10 @@ p{
     border-radius:5px;
     position: absolute;
     bottom: 0;
-    font-size:18px;
-    font-weight:900;
-    color: #008000 ;
+    font-size:14px;
+    font-weight:bold;
+    color: #4B0082;
+    text-transform: uppercase;
   }
   .form-element .icon {
     margin-top:10px;
@@ -212,7 +126,7 @@ p{
     height:10px;
     top:8px;
     left:8px;
-    background:#0d0df1;
+    background:#4B0082;;
     color:#fff;
     text-align:center;
     line-height:18px;
@@ -225,13 +139,13 @@ p{
   }
 
   .form-element input:checked + label .icon {
-    color:#0d0df1;
+    color:#4B0082;
   }
   .form-element input:checked + label .title {
-    color:#0d0df1;
+    color:#4B0082;
   }
   .form-element input:checked + label {
-    border:2px solid #0d0df1;
+    border:2px solid #4B0082;
   }
 
   button {
@@ -242,8 +156,8 @@ p{
     cursor:pointer;
     border: none;
     border: radius 5px;
-    max-width: 38%;
-    max-height: 60%;
+    max-width: 30%;
+    max-height: 15%;
     font-weight: bold;
     text-align: center;
     font-size: 14px;
@@ -251,7 +165,101 @@ p{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    text-transform: uppercase;
   }
+  .select2.narrow {
+    background: #4B0082;
+    color: #fff;
+    padding: 10px 30px;
+    cursor:pointer;
+    border: none;
+    border: radius 5px;
+    margin-top: 15px;
+    max-width: 30%;
+    max-height: 15%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.fname {
+  color:  #4B0082;
+  padding: 10px 30px;
+  border:  #4B0082;
+  border: radius 5px;
+  margin-top: 15px;
+  max-width: 40%;
+  max-height: 15%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.fname1 {
+  color:  #4B0082;
+  padding: 10px 30px;
+  cursor:pointer;
+  border: none;
+  border: radius 5px;
+  margin-top: 15px;
+  max-width: 40%;
+  max-height: 15%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px 30px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+
+
+#progressBarContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  width: 50%;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+#progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4B0082;
+}
+
+#progressBarPercent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
 
 
   

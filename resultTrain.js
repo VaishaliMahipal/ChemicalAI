@@ -55,32 +55,72 @@ xhr.send();
 
 function displayImages() {
   for (var i=0;i<acceptedNames.length;i++){
-      const img = document.createElement('img');
-      var imgName = "ImageIcon/"+acceptedNames[i]+".jpg";
+        const checkboxWrapperDiv = document.createElement("div");
+        const checkboxDiv = document.createElement("div");
+        checkboxDiv.classList.add("formTest-elementTest");
+        var imgName = "ImageIcon/"+acceptedNames[i]+".jpg";
+        const encodedUrl = encodeURIComponent(imgName);
 
-      const encodedUrl = encodeURIComponent(imgName);
+        var label = document.createElement('label')
 
-      img.src = encodedUrl;
-   
-      img.width = 150; 
-      img.height = 150; 
-      acceptContainer.appendChild(img);
+        label.htmlFor = acceptedNames[i];
+        label.appendChild(document.createTextNode(acceptedNames[i]));
+        label.style.backgroundImage = `url(${encodedUrl})`;
+
+        label.style.backgroundSize = 'cover';
+        checkboxDiv.appendChild(label);
+        checkboxWrapperDiv.appendChild(checkboxDiv);
+        checkboxWrapperDiv.appendChild(document.createElement("br"));
+ 
+        acceptContainer.appendChild(checkboxWrapperDiv);
       
   }
 
   for (var i=0;i<notAcceptedNames.length;i++){
-    const img = document.createElement('img');
+    const checkboxWrapperDiv = document.createElement("div");
+    const checkboxDiv = document.createElement("div");
+    checkboxDiv.classList.add("formTest-elementTest");
     var imgName = "ImageIcon/"+notAcceptedNames[i]+".jpg";
-
     const encodedUrl = encodeURIComponent(imgName);
 
-    img.src = encodedUrl;
- 
-    img.width = 150; 
-    img.height = 150; 
-    notAcceptContainer.appendChild(img);
+    var label = document.createElement('label')
+
+    label.htmlFor = notAcceptedNames[i];
+    label.appendChild(document.createTextNode(notAcceptedNames[i]));
+    label.style.backgroundImage = `url(${encodedUrl})`;
+
+    label.style.backgroundSize = 'cover';
+    checkboxDiv.appendChild(label);
+    checkboxWrapperDiv.appendChild(checkboxDiv);
+    checkboxWrapperDiv.appendChild(document.createElement("br"));
+
+    notAcceptContainer.appendChild(checkboxWrapperDiv);
+  
     
 }
+}
+
+export function saveResponse() {
+  var resultArray = [];
+
+  var ele = document.getElementsByName('choice-radio');
+          
+        for(var i = 0; i < ele.length; i++) {
+            if(ele[i].checked)
+            resultArray.push(ele[i].value);
+        }
+
+
+
+  var ajax = new XMLHttpRequest();
+  ajax.open("POST", "save_data_file.php", true);
+  ajax.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+  ajax.send(JSON.stringify(resultArray));
+  ajax.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText);
+    }
+  };
 }
 
 

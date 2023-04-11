@@ -1,32 +1,91 @@
-.image-container {
-  display: flex;
+.testingContainer {
+  font-size:20px;
+  color:#4B0082;
+  gap:20px;
+  font-weight: bold;
 }
+
+.testingContainer h2 {
+  font-size:20px;
+  color:#4B0082;
+  text-align:center;
+  gap:20px;
+  font-weight: bold;
+}
+
+.testingContainer .image-container {
+  margin-top:25px;
+  display:flex;
+  gap:20px;
+  max-width:100%;
+}
+.formTest-elementTest{
+  position:relative;
+  width:100px;
+  height:100px;
+  display: flex;
+  
+}
+
+
+.formTest-elementTest label {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items: flex-end;
+  height:100%;
+  cursor:pointer;
+  border:2px solid #ddd;
+  background:#fff;
+  box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
+  text-align:center;
+  transition:all 200ms ease-in-out;
+  border-radius:5px;
+  position: absolute;
+  bottom: 0;
+  font-size:14px;
+  font-weight:bold;
+  color: #4B0082;
+  text-transform: uppercase;
+}
+.formTest-elementTest .icon {
+  margin-top:10px;
+  font-size:30px;
+  font-weight:900;
+  color:#555;
+  transition:all 200ms ease-in-out;
+  justify-content:center;
+}
+.formTest-elementTest .title {
+  font-size:10px;
+  font-weight:900;
+  color:#555;
+  padding:5px 0px;
+  transition:all 200ms ease-in-out;
+}
+.formTest-elementTest label:before {
+  content:"✓";
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:8px;
+  left:8px;
+  background:#4B0082;
+  color:#fff;
+  text-align:center;
+  line-height:18px;
+  font-size:5px;
+  font-weight:900;
+  border-radius:50%;
+  opacity:0;
+  transform:scale(0.5);
+  transition:all 200ms ease-in-out;
+}
+
 
 .acceptable, .non-acceptable {
+  display:flex;
+  flex-wrap:wrap;
   flex: 1;
-}
-
-.image {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
-  border: 1px solid black;
-}
-button {
-  display: inline-block;
-  background-color:#4B0082;
-  color: #fff;
-  padding: 15px 32px;
-  cursor:pointer;
-  border: none;
-  border: radius 5px;
-  max-width: 38%;
-  max-height: 60%;
-  font-weight: bold;
-  text-align: center;
-  font-size: 14px;
-  margin: 4px 4px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  flex-direction: row;
 }

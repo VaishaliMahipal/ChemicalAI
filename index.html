@@ -28,15 +28,37 @@
             </h1>
           </div>
         </div>
+        <div class="infoContainer">
+          <div class="container flex">
+            <h1 class="logo">
+              <label for="fname"  class="fname1">First name:</label>
+              <input type="text" id="fname" name="fname" class="fname">
+              <select class="select2 narrow" id="select2">
+                <option value="prompt 1">Select your Grade</option>
+                <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
+                <option value="Grade 6">Grade 6</option>
+                <option value="Grade 7">Grade 7</option>
+                <option value="Grade 8">Grade 8</option>
+                <option value="Grade 9">Grade 9</option>
+                <option value="Grade 10">Grade 10</option>
+              </select>
+            </h1>
+          </div>
+        </div>
 
         <div class="trainingContainer">
           <div class="trContainer flex">
                 <h2>Choose items that you can take into chemical lab </h2>
                 <div class="list" id = "divCheckboxs">
                 </div>
-               
-                <button id="next" onclick="import('./index.js').then(module => module.checkCheckbox())">Next</button>
-               
+                <button id="next" onclick="import('./index.js').then(module => module.progress())">Train</button>
+                <br><br>
+                <div id="progressBarContainer" style="display:none;">
+                  <div id="progressBar"></div>
+                  <span id="progressBarPercent">0%</span>
+                </div>
           </div>
         </div>
     </div>

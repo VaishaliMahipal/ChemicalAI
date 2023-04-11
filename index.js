@@ -27,6 +27,7 @@ const testDataObject =[];
 var tempArray=[];
 var result=[];
 var resultArray=[];
+var saveDataArray=[];
 
 var container = document.getElementById('divCheckboxs');
 xhr.open('GET', 'labjsondata.json');
@@ -70,7 +71,7 @@ xhr.onload = () => {
     // displayItems(food);
     // displayItems(researchItem);
     // displayItems(UnsafeItem);
-    for (var i=0;i<6;i++){
+    for (var i=0;i<4;i++){
         combinedItems.push(flammableItem[i]);
         combinedItems.push(food[i]);
         combinedItems.push(ppe[i]);
@@ -78,7 +79,7 @@ xhr.onload = () => {
         combinedItems.push(UnsafeItem[i]);
     }
 
-    for (var i=6;i<10;i++){
+    for (var i=6;i<9;i++){
         testData.push(flammableItem[i]);
         testData.push(food[i]);
         testData.push(ppe[i]);
@@ -104,7 +105,7 @@ function shuffleArray(array) {
 }
 
 function displayItems() {
-    for (var i=0;i<30;i++){
+    for (var i=0;i<combinedItems.length;i++){
         //combinedItems.push(tempArray[i]);
         console.log(i);
         console.log(combinedItems[i]);
@@ -148,7 +149,10 @@ export function checkCheckbox() {
   
  // console.log("firdstgg")
  // buttonClicked = true;
-    for (var i=0;i<30;i++){
+ var getFirstName = document.getElementById("fname");
+ var getGrade = document.getElementById("select2");
+ 
+    for (var i=0;i<combinedItems.length;i++){
         var temp = document.getElementById(combinedItems[i]);
       
         if (temp.checked == true ){  
@@ -251,6 +255,33 @@ export function checkCheckbox() {
             console.log(this.responseText);
           }
         };
+
+        saveDataArray.push(getFirstName.value);
+        saveDataArray.push(getGrade.value);
+        getGrade
+            for (let j = 0; j < trainData.length; j++) {
+              const obj = trainData[j];
+              saveDataArray.push(
+                  Object.assign({}, obj, { "dataType": "Training Data" })
+                );
+             }
+             
+             for (let j = 0; j < resultArray.length; j++) {
+              const obj = resultArray[j];
+              saveDataArray.push(
+                  Object.assign({}, obj, { "dataType": "Testing Data" })
+                );
+             }
+      
+        var ajax2 = new XMLHttpRequest();
+        ajax2.open("POST", "save_data_file.php", true);
+        ajax2.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+        ajax2.send(JSON.stringify(saveDataArray));
+        ajax2.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+          }
+        };
     
 
     //const blob = new Blob([resultArray], { type: 'application/json' });
@@ -273,4 +304,27 @@ export function checkCheckbox() {
 //   buttonClicked = true;
 //   console.log(result) 
 // }
+
+export function progress() {
+  var progressBar = document.getElementById("progressBar");
+        var progressBarContainer = document.getElementById("progressBarContainer");
+        progressBar.style.width = "0%";
+        progressBarContainer.style.display = "block";
+        var percent = 0;
+        var intervals = [20, 50, 70, 90, 100];
+        var intervalIndex = 0;
+        var intervalId = setInterval(function() {
+          percent += 1;
+          progressBar.style.width = percent + "%";
+          document.getElementById("progressBarPercent").innerHTML = percent + "%";
+          if (percent >= intervals[intervalIndex]) {
+            intervalIndex++;
+            if (intervalIndex >= intervals.length) {
+              clearInterval(intervalId);
+              checkCheckbox();
+            }
+          }
+        }, 50); // 50 milliseconds interval for demo purposes
+      }
+
 
